@@ -1,0 +1,97 @@
+.element{
+  height: 361px;
+    background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.element__pic{
+  display:block;
+  height: 282px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.element__pic-display{
+  position: relative;
+  z-index: 1;
+  top: -33px;
+}
+
+.element__pic-display:hover{
+  cursor: url('../images/hand_over.png'), auto;
+}
+.element__pic-trash{
+  position: relative;
+  z-index: 2;
+  width: 18px;
+  height: 33px;
+  top: 18px;
+  left: 249px;
+}
+
+.element__pic-trash:hover{
+  height: 19.300195693969727px;
+  opacity: 0.6;
+  cursor: url('../images/hand_over.png'), auto;
+}
+
+.element__title{
+  /* width: 87.2340%; */
+  width: 246px;
+  height: 79px;
+  align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-items: center;
+}
+
+.element__title-name{
+  width: 225px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 100%;
+  color: #000000;
+    -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+.element__title-fav{
+  width: 21px;
+  height: 19px;
+}
+
+.element__title-fav-active{
+  width: 21px;
+  height: 19px;
+  border-image-source: url(../images/fav_act.png);
+}
+
+.element__title-fav:hover{
+  width: 21px;
+  height: 19px;
+  opacity: 0.5;
+  cursor: url('../images/hand_over.png'), auto;
+}

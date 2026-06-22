@@ -1,0 +1,24 @@
+.header{
+  padding-top: 45px;
+  width: 880px;
+  height: 74px;
+  border-bottom: 1px solid #545454;
+  justify-content: left;
+  padding-bottom: 41px;
+  background-image: url("../images/header_text.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  margin: 0;
+}
+
+@media screen and (max-width: 880px){
+  .header{
+    padding-top: 28px;
+    width: 320px;
+    height: 56px;
+    background-image: url("../images/logo_320.png");
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    margin: 0;
+  }
+}
