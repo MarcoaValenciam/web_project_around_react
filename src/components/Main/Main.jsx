@@ -1,5 +1,5 @@
-import avatar from '../../../images/avatar_profile.jpg'
-import editButton from '../../../images/Edit_Button.png'
+import avatar from '../../../images/avatar.jpg'
+import editButton from '../../../images/edit-button.svg'
 import { useState } from 'react';
 import Popup from './components/Popup/Popup.jsx';
 import NewCard from './components/form/NewCard/NewCard.jsx';
