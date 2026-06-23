@@ -7,4 +7,5 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  base:'https://marcoavalenciam.github.io/web_project_around_react',
 })

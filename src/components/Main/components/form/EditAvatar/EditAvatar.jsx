@@ -1,6 +1,5 @@
 export default function EditAvatar(props) {
   const { link } = props;
-  alert(link);
 
   return (
     <form
