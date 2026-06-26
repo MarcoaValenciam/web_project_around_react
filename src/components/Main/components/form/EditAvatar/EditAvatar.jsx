@@ -16,17 +16,6 @@ export default function EditAvatar(props) {
         />
         <span className="popup__error" id="avatar-link-error"></span>
       </label>
-      {/* <label className="popup__field">
-        <input
-          className="popup__input popup__input_type_url"
-          id="card-link"
-          name="link"
-          placeholder="Image link"
-          required
-          type="url"
-        />
-        <span className="popup__error" id="card-link-error"></span>
-      </label> */}
       <button className="button popup__button" type="submit">
         Guardar
       </button>

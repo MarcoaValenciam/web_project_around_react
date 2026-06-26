@@ -6,7 +6,7 @@ import NewCard from './components/form/NewCard/NewCard.jsx';
 import EditProfile from './components/form/EditProfile/EditProfile.jsx';
 import EditAvatar from './components/form/EditAvatar/EditAvatar.jsx';
 import Card from './components/Card/Card.jsx';
-import ImagePopup from './components/ImagePopup/ImagePupup.jsx';
+import ImagePopup from './components/ImagePopup/ImagePopup.jsx';
 
 const cards = [
   {
@@ -42,7 +42,7 @@ export default function Main(){
       setPopup(null);
     }
     
-    function SelectedCard(card) {
+    function onSelectedCard(card) {
         handleOpenPopup({ title: null, children: <ImagePopup card={card} /> });
     }
 
@@ -66,7 +66,7 @@ export default function Main(){
             <section className ="elements">
                 <ul className="elements__list">
                     {cards.map((card) => (
-                        <Card key={card._id} card={card} selectedCard={SelectedCard} />
+                        <Card key={card._id} card={card} onSelectedCard={onSelectedCard} />
                     ))}     
                 </ul>
             </section>

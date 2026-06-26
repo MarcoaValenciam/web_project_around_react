@@ -2,10 +2,6 @@
   padding-top: 50px;
   width: 880px;
   margin: auto;
-  /* -ms-grid-column-align: center;
-      justify-self: center;
-  font-family: Inter;
-  display: -ms-grid; */
   display: flex;
   flex-direction: row; 
   flex-wrap: nowrap;
