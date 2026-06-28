@@ -10,10 +10,16 @@
 }
 
 ul, ol {
-    margin: 0;
-    padding: 0;
-    list-style: none; 
-}
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 282px);
+  justify-content: left;
+  gap: 20px 17px;
+  padding-top: 50px;
+  padding-left: 0;
+  width: 880px;
+  list-style-type: none;
+  margin: 0;              
+} 
 
 @media screen and (max-width: 880px){
   .elements{
@@ -25,7 +31,8 @@ ul, ol {
     font-family: Inter;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 100%;
+    grid-template-columns: 282px 1fr;
+    /* -ms-grid-columns: 1fr 100%; */
     grid-template-columns: 282px;
     -ms-grid-rows: 1fr 20px 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -35,4 +42,10 @@ ul, ol {
     row-gap: 20px;
     justify-content: center;
   }
+
+  ul, ol {
+    justify-content: center;
+    width: auto;
+  } 
+
 }
