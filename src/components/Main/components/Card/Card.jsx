@@ -11,11 +11,14 @@ export default function Card(props) {
     }
     // Verifica si el usuario actual le ha dado "like" a la tarjeta
     const cardLikeButtonClassName = `card__like-button ${isLiked ? 'card__like-button_is-active' : ''}`;
+    
     function handleLikeClick() {
-      props.onCardLike(props.card);
+      // props.onCardLike(props.card);
+        props.handleCardLike(props.card);
     }
+
     function handleCardDelete() {
-      props.onCardDelete(props.card);
+      props.handleCardDelete(props.card);
     }
 
   return (
