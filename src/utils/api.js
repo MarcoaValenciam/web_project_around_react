@@ -68,23 +68,23 @@ export default class Api {
     return this._checkResponse(res);
   }
 
-  // async addLike(cardId) {
-  //   // return fetch(`${this._baseUrl}/cards/likes/${cardId}`, {
-  //   const res = await fetch(`${this._baseUrl}/cards/${cardId}/likes`, {
-  //     method: 'PUT',
-  //     headers: this._headers
-  //   });
-  //   return this._checkResponse(res);
-  // }
+  async addLike(cardId) {
+    // return fetch(`${this._baseUrl}/cards/likes/${cardId}`, {
+    const res = await fetch(`${this._baseUrl}/cards/${cardId}/likes`, {
+      method: 'PUT',
+      headers: this._headers
+    });
+    return this._checkResponse(res);
+  }
 
-  // async removeLike(cardId) {
-  //   // return fetch(`${this._baseUrl}/cards/likes/${cardId}`, {
-  //   const res = await fetch(`${this._baseUrl}/cards/${cardId}/likes`, {
-  //     method: 'DELETE',
-  //     headers: this._headers
-  //   });
-  //   return this._checkResponse(res);
-  // }
+  async removeLike(cardId) {
+    // return fetch(`${this._baseUrl}/cards/likes/${cardId}`, {
+    const res = await fetch(`${this._baseUrl}/cards/${cardId}/likes`, {
+      method: 'DELETE',
+      headers: this._headers
+    });
+    return this._checkResponse(res);
+  }
 
   changeLikeCardStatus(cardId, isLiked) {
     return isLiked ? this.addLike(cardId) : this.removeLike(cardId);
