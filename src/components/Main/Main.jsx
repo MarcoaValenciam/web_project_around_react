@@ -6,7 +6,7 @@ import EditProfile from './components/form/EditProfile/EditProfile.jsx';
 import EditAvatar from './components/form/EditAvatar/EditAvatar.jsx';
 import Card from './components/Card/Card.jsx';
 import ImagePopup from './components/ImagePopup/ImagePopup.jsx';
-import { CurrentUserContext } from '../../contexts/CurrentUserContext.js';
+import CurrentUserContext from '../../contexts/CurrentUserContext.js';
 
 export default function Main(props) {
     const { currentUser, handleUpdateUser, handleUpdateAvatar } = useContext(CurrentUserContext);
