@@ -13,6 +13,7 @@ export default function Card(props) {
     const cardLikeButtonClassName = `card__like-button ${isLiked ? 'card__like-button_is-active' : ''}`;
     
     function handleLikeClick() {
+      alert("Se ha dado like a la tarjeta: " + name + " con link: " + link + " y el usuario actual es: " + currentUser.name + " con id: " + currentUser._id + " y el id de la tarjeta es: " + props.card._id + " y el estado de like es: " + isLiked);
       // props.onCardLike(props.card);
         props.handleCardLike(props.card);
     }
