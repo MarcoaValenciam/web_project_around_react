@@ -19,6 +19,7 @@ export default function Card(props) {
     }
 
     function handleCardDelete() {
+      alert("Se ha eliminado la tarjeta: " + name + " con link: " + link + " y el usuario actual es: " + currentUser.name + " con id: " + currentUser._id + " y el id de la tarjeta es: " + props.card._id);
       props.handleCardDelete(props.card);
     }
 
