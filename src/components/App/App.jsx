@@ -22,6 +22,7 @@ function App() {
     try {
       const newData = await api.setUserInfo(data);
       setCurrentUser(newData);
+      handleClosePopup();
     } catch (error) {
       console.error(error);
     }
