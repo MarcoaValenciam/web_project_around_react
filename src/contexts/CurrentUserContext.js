@@ -6,8 +6,8 @@ const CurrentUserContext = createContext({
         about: "Explorer",
         avatar: "https://pictures.s3.yandex.net/frontend-developer/common/ava.jpg"
     },
-    handleUpdateUser: () => {},   // Función por defecto vacía
-    handleUpdateAvatar: () => {}  // Función por defecto vacía
+    handleUpdateUser: () => {},   
+    handleUpdateAvatar: () => {}  
 });
 
 export default CurrentUserContext;
