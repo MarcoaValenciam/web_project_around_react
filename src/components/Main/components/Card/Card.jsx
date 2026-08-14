@@ -13,13 +13,10 @@ export default function Card(props) {
     const cardLikeButtonClassName = `card__like-button ${isLiked ? 'card__like-button_is-active' : ''}`;
     
     function handleLikeClick() {
-      // alert("Se ha dado like a la tarjeta: " + name + " con link: " + link + " y el usuario actual es: " + currentUser.name + " con id: " + currentUser._id + " y el id de la tarjeta es: " + props.card._id + " y el estado de like es: " + isLiked);
-      // props.onCardLike(props.card);
-        // props.handleCardLike(props.card);
+        props.handleCardLike(props.card);
     }
 
     function handleCardDelete() {
-      alert("Se ha eliminado la tarjeta: " + name + " con link: " + link + " y el usuario actual es: " + currentUser.name + " con id: " + currentUser._id + " y el id de la tarjeta es: " + props.card._id);
       props.handleCardDelete(props.card);
     }
 
@@ -30,7 +27,7 @@ export default function Card(props) {
         aria-label="Delete card"
         className="card__delete-button"
         type="button"
-        onClick={handleCardDelete}
+        onClick={() => handleCardDelete()}
       />
       <div className="card__description">
         <h2 className="card__title">{name}</h2>
@@ -38,7 +35,7 @@ export default function Card(props) {
           aria-label="Like card"
           type="button"
           className={cardLikeButtonClassName}
-          onClick={handleLikeClick}
+          onClick={() => handleLikeClick()}
         />
       </div>
     </li>

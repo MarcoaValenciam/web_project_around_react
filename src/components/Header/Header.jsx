@@ -5,7 +5,6 @@ export default function Header() {
         <header className="header">
             <div className="header__logo">
                 <img className="header__logo-image" src={logo} alt="Logo" />
-                alert("Se ha cargado el componente Header y se ha importado la imagen del logo desde: " + logo);
             </div>
         </header>
     );
