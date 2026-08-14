@@ -15,7 +15,7 @@ export default function NewCard(props) {
   function handleAddPlaceSubmit(event) {
     event.preventDefault();
     // Enviamos los datos usando directamente las variables de estado
-    props.onAddPlace({
+    props.handleAddPlaceSubmit({
     name: name,
     link: link
     });

@@ -25,7 +25,7 @@ export default function EditProfile(props) {
           className="popup__input popup__input_type_name"
           id="profile-name"
           maxLength="40"
-          minLength="6"
+          minLength="2"
           name="profile-name"
           type="text"
           required

@@ -56,7 +56,7 @@ export default class Api {
   }
 
   // Ejemplo de uso de fetch para agregar una nueva tarjeta a la API
-  async addCard({ name, link }) {
+  async addNewCard({ name, link }) {
     const res = await fetch(`${this._baseUrl}/cards`, {
       method: 'POST',
       headers: this._headers,
