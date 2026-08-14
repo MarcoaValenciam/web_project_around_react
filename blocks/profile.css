@@ -1,0 +1,208 @@
+.profile{
+  padding-top: 40px;
+  width: 880px;
+  margin: auto;
+  align-self:center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-family: Inter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  z-index: 2;
+}
+
+.profile__avatar {
+  width: 120px;
+  height: 120px;
+  background-color: transparent;
+  border-radius: 50%;
+  object-position: center;
+  object-fit: cover;
+  position: relative;
+  cursor: pointer;
+}
+
+.profile__avatar-image {
+  width: 120px;
+  height: 120px;
+  background-color: transparent;
+  border-radius: 50%;
+  object-position: center;
+  object-fit: cover;
+  position: absolute;
+  cursor: pointer;
+}
+
+.profile__avatar-edit {
+  width: 120px;
+  height: 120px;
+  background-color: transparent;
+  border-radius: 50%;
+  object-position: center;
+  object-fit: cover;
+  position: relative;
+  cursor: pointer;
+}
+
+.profile__avatar-edit:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/edit-icon.svg') center no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  background-size: 26px;
+  transition-duration: 0.3s, 1s;
+  transition-delay: 0s, 0.1s;
+}
+
+.profile__info{
+  padding-left: 3.4091%;
+  padding-top: 2.5000%;
+  padding-bottom: 2.3864%;
+  width: 47.1591%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: 1fr;
+  grid-template-rows: repeat(1, 1fr);
+      grid-template-areas:
+  "name edit"
+  "activity ."
+  ;
+}
+
+.profile__info-name{
+  padding: 0;
+  width: 100%;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+}
+
+.profile__info-edit-button{
+  align-self: center;
+  width: 24px;
+  height: 24px;
+  border-width: 1px;
+}
+
+.profile__info-edit-button:hover{
+  border: 1px solid #FFFFFF;
+  cursor: url('../images/hand_over.png'), auto;
+}
+
+.profile__info_activity{
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.profile__place-add{
+  padding-top: 3.9773%;
+  padding-left: 18.7500%;
+  width: 150px;
+  height: 50px;
+  -ms-grid-column-align: self-end;
+      justify-self: self-end;
+}
+
+.profile__place-add-button{
+  background-image: url(../images/Add_Button.png);
+  padding: 0;
+}
+
+.profile__place-add-button:hover{
+    border: 2px solid #FFFFFF;
+    cursor: url('../images/hand_over.png'), auto;
+}
+
+@media screen and (max-width: 880px){
+  .profile{
+    padding-top: 42px;
+    width: 282px;
+    margin: auto;
+        justify-self: center;
+    font-family: Inter;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-content: center;
+  }
+
+  .profile__avatar{
+    align-self: center;
+  }
+
+  .profile__info{
+    padding-top: 30px;
+    padding-left: 0;
+    align-self: center;
+    width: 234px;
+    align-items: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 200px 24px;
+    -ms-grid-rows: 1fr;
+    column-gap: 10px;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "name edit"
+    "activity activity"
+    ;
+  }
+
+  .profile__info-name{
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    text-align: left;
+  }
+
+  .profile__info-edit-button{
+    padding: 0;
+    width: 24px;
+  }
+
+  .profile__info-activity{
+    padding-top: 14px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    grid-area: activity;
+  }
+
+  .profile__place-add{
+    padding-top: 36px;
+    padding-left: 0;
+    width: 100%;
+    height: 50px;
+    -ms-grid-column-align: self-end;
+        justify-self: self-end;
+  }
+
+  .profile__place-add-button{
+    background-image: url(../images/Add_Button.svg);
+    padding: 0;
+  }
+}

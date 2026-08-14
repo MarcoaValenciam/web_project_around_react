@@ -1,0 +1,34 @@
+h1, h2, p, img{
+  margin: 0;
+  padding: 0;
+}
+
+.page{
+  position: relative;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center ;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 0;
+  background-color: #000;
+  width: 100vw;
+  color: white;
+}
+
+@media screen and (max-width: 880px){
+  .page{
+    margin: auto;
+    align-self: center;
+    width: 100vw;
+  }
+}
